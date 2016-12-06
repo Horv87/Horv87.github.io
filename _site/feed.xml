@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coding Life</title>
+    <description>Find out about aspiring Developer Martin Horvath
+</description>
+    <link>http://horv87.github.io/</link>
+    <atom:link href="http://horv87.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 06 Dec 2016 15:47:51 +0100</pubDate>
+    <lastBuildDate>Tue, 06 Dec 2016 15:47:51 +0100</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Never look for small imprints again</title>
+        <description>&lt;p&gt;Recently i decided to learn about &lt;a href=&quot;https://developer.mozilla.org/en-US/Add-ons/WebExtensions&quot;&gt;&lt;strong&gt;WebExtensions&lt;/strong&gt;&lt;/a&gt; an API to develop Browser Extensions for firefox and chrome.
+In my opinion the best way to learn a new technology is by solving a real world problem. One real world problem i had was often having 
+to look for really small imprint links on websites.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://developer.mozilla.org/en-US/Add-ons/WebExtensions&quot;&gt;documentation&lt;/a&gt; for WebExtensions is really well written, so it was quite easy to get going.
+My ImprintFinder Extensions works with just a little bit of &lt;code class=&quot;highlighter-rouge&quot;&gt;regex&lt;/code&gt; black magic:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;links&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;len&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;regEx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/Impressum|Imprint/g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;regEx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)){&lt;/span&gt;
+		&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The full project is on github so &lt;a href=&quot;https://github.com/Horv87/ImprintFinder&quot;&gt;&lt;strong&gt;check it out&lt;/strong&gt;&lt;/a&gt; or even better try to make your own little WebExtension.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 03 Dec 2016 11:21:00 +0100</pubDate>
+        <link>http://horv87.github.io/javascript/2016/12/03/imprint-finder.html</link>
+        <guid isPermaLink="true">http://horv87.github.io/javascript/2016/12/03/imprint-finder.html</guid>
+        
+        
+        <category>javascript</category>
+        
+      </item>
+    
+      <item>
+        <title>Escape the trolls</title>
+        <description>&lt;p&gt;The &lt;a href=&quot;https://www.reddit.com/r/dailyprogrammer/&quot;&gt;reddit dailyprogrammer community&lt;/a&gt; post a little coding-kata every day.
+One challenge i did solve there was &lt;a href=&quot;https://www.reddit.com/r/dailyprogrammer/comments/4vrb8n/weekly_25_escape_the_trolls/&quot;&gt;Escpae the trolls&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can find my code on &lt;a href=&quot;https://github.com/Horv87/MazeGame&quot;&gt;github&lt;/a&gt;, some things i would like to add in the future are:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;A random maze generator: &lt;a href=&quot;https://en.wikipedia.org/wiki/Maze_generation_algorithm&quot;&gt;wikipedia&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Some trolls to make the game more fun.&lt;/li&gt;
+  &lt;li&gt;Improved line of sight blocker.&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Sat, 01 Oct 2016 13:00:00 +0200</pubDate>
+        <link>http://horv87.github.io/java/2016/10/01/maze-game.html</link>
+        <guid isPermaLink="true">http://horv87.github.io/java/2016/10/01/maze-game.html</guid>
+        
+        
+        <category>java</category>
+        
+      </item>
+    
+  </channel>
+</rss>

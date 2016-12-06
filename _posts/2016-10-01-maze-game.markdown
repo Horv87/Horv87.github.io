@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Escape the trolls"
+date:   2016-10-01 12:00:00 +0100
+categories: java
+---
+
+The [reddit dailyprogrammer community](https://www.reddit.com/r/dailyprogrammer/) post a little coding-kata every day.
+One challenge i did solve there was [Escpae the trolls](https://www.reddit.com/r/dailyprogrammer/comments/4vrb8n/weekly_25_escape_the_trolls/).
+
+You can find my code on [github](https://github.com/Horv87/MazeGame), some things i would like to add in the future are:
+
+1. A random maze generator: [wikipedia](https://en.wikipedia.org/wiki/Maze_generation_algorithm).
+2. Some trolls to make the game more fun.
+3. Improved line of sight blocker.
+
